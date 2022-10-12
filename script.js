@@ -23,47 +23,12 @@ function matrixGenerator(matrixSize, grassCount,grassEaterCount,predatorCount,np
      }
 
      // npc 
-     for(let i = 0; i < npcCount;i++){
-        let x = Math.floor(Math.random() * matrixSize)
-        let y = Math.floor(Math.random() * matrixSize)
-
-        if(matrix[y][x] == 0){
-            matrix[y][x] = 4
-        }
-     }
-
-
-
-     for (let i = 0; i < grassEaterCount; i++) {
-
-          let x = Math.floor(Math.random() * matrixSize)
-          let y = Math.floor(Math.random() * matrixSize)
-
-          if (matrix[y][x] == 0) {
-               matrix[y][x] = 2
-          }
-     }
+     
 
      //prison
-     for (let i = 0; i < prisonCount; i++) {
-
-          let x = Math.floor(Math.random() * matrixSize)
-          let y = Math.floor(Math.random() * matrixSize)
-          if (matrix[y][x] == 0) {
-              matrix[y][x] = 5
-          }
-     }
+     
               //angular 
-     for(let i = 0; i < angularCount; i++){
-
-          let x = 0
-          let y = 0
-
-          if (matrix[y][x] == 0) {
-              matrix[y][x] = 6
-          }
-     }
-
+     
 
 
 
